@@ -1,0 +1,19 @@
+name: Feature request
+description: Suggest a focused improvement to Laravel Project Docs
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What developer/documentation problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested behaviour
+      description: Describe the smallest useful change and how it avoids report noise or false positives.
+    validations:
+      required: true

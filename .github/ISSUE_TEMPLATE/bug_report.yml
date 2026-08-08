@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a reproducible package or documentation-generation problem
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Please do not include .env values, passwords, tokens or other secrets."
+  - type: input
+    id: laravel
+    attributes:
+      label: Laravel version
+      placeholder: "12.x"
+    validations:
+      required: true
+  - type: input
+    id: php
+    attributes:
+      label: PHP version
+      placeholder: "8.4.x"
+    validations:
+      required: true
+  - type: input
+    id: package
+    attributes:
+      label: Laravel Project Docs version
+      placeholder: "0.9.4"
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Generation command
+      placeholder: "php artisan project-docs:generate --quality"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the error/finding and a minimal safe code example if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true

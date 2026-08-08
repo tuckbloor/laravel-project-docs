@@ -1,0 +1,58 @@
+{
+    "name": "tuckbloor/laravel-project-docs",
+    "description": "Generate navigable Laravel documentation with static architecture, source, workflow and code-quality analysis.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "documentation",
+        "static-analysis",
+        "developer-tools",
+        "code-quality",
+        "code-review",
+        "architecture"
+    ],
+    "require": {
+        "php": "^8.2 || ^8.3 || ^8.4 || ^8.5",
+        "illuminate/console": "^11.0 || ^12.0 || ^13.0",
+        "illuminate/contracts": "^11.0 || ^12.0 || ^13.0",
+        "illuminate/routing": "^11.0 || ^12.0 || ^13.0",
+        "illuminate/support": "^11.0 || ^12.0 || ^13.0",
+        "nikic/php-parser": "^5.7",
+        "dompdf/dompdf": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "DevDocs\\LaravelProjectDocs\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DevDocs\\LaravelProjectDocs\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DevDocs\\LaravelProjectDocs\\LaravelProjectDocsServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Chris Bloor",
+            "homepage": "https://github.com/tuckbloor",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/tuckbloor/laravel-project-docs",
+    "support": {
+        "issues": "https://github.com/tuckbloor/laravel-project-docs/issues",
+        "source": "https://github.com/tuckbloor/laravel-project-docs"
+    }
+}
