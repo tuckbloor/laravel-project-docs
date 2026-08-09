@@ -27,6 +27,33 @@ A normal build can include:
 
 A compact `--quality` mode is also available when you only want the code-review report.
 
+
+## Screenshots
+
+### Project overview
+
+The generated documentation opens with the detected project name, Laravel/PHP versions, analysis mode, environment-file status and quick navigation.
+
+![Laravel Project Docs project overview](https://raw.githubusercontent.com/tuckbloor/laravel-project-docs/master/docs/images/Screenshot%202026-08-09%20191348%281%29.png)
+
+### Project summary and analysis coverage
+
+The summary shows routes, classes, PHP/frontend files, models, database tables, relationships, source coverage, detected frontend stack and the highest-priority findings without duplicating the full quality report.
+
+![Laravel Project Docs project summary and analysis coverage](https://raw.githubusercontent.com/tuckbloor/laravel-project-docs/master/docs/images/Screenshot%202026-08-09%20191414%281%29.png)
+
+### Quality report
+
+Quality findings are grouped by severity and confidence, with direct **View Source Code** links to the exact file and line that triggered the finding.
+
+![Laravel Project Docs quality and risk analysis](https://raw.githubusercontent.com/tuckbloor/laravel-project-docs/master/docs/images/Screenshot%202026-08-09%20191519%281%29.png)
+
+### Highlighted source lines
+
+Problem lines are highlighted directly in the source appendix, while keeping syntax colouring and line numbers so the issue can be reviewed in context.
+
+![Laravel Project Docs highlighted source code finding](https://raw.githubusercontent.com/tuckbloor/laravel-project-docs/master/docs/images/Screenshot%202026-08-09%20191608%281%29.png)
+
 ## Supported versions
 
 - PHP: `8.2`, `8.3`, `8.4`, `8.5`
@@ -502,13 +529,13 @@ Add a path repository to the host application's `composer.json`:
 
 ```json
 "repositories": [
-    {
-        "type": "path",
-        "url": "packages/laravel-project-docs",
-        "options": {
-            "symlink": true
-        }
-    }
+{
+"type": "path",
+"url": "packages/laravel-project-docs",
+"options": {
+"symlink": true
+}
+}
 ]
 ```
 
